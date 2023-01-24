@@ -36,11 +36,7 @@ function md5areDifferent($data, $pathToDir)
     $jsonAfter = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     $jsonAfterMd5 = md5($jsonAfter);
 
-    if ($jsonBeforeMd5 != $jsonAfterMd5) {
-        return true;
-    }
-
-    return false;
+    return $jsonBeforeMd5 != $jsonAfterMd5;
 }
 
 function getAllJsons($path)
@@ -64,6 +60,6 @@ function getAllJsons($path)
 function saveJson($data, $outputDir)
 {
     $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-    
+
     return file_put_contents($outputDir . 'cve.json', $json);
 }
