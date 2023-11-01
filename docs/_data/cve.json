@@ -9101,6 +9101,82 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-36263",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Prestashop opartlimitquantity 1.4.5 and before is vulnerable to SQL Injection. OpartlimitquantityAlertlimitModuleFrontController::displayAjaxPushAlertMessage()` has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/25/opartlimitquantity.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/25/opartlimitquantity.html"
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "LOW",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "UNCHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AC:L/AV:N/A:H/C:H/I:H/PR:N/S:U/UI:N",
+                "version": "3.1"
+            }
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-25206",
             "STATE": "PUBLIC"
         },
@@ -9228,6 +9304,68 @@
                     "refsource": "MISC",
                     "name": "https://blog.sorcery.ie/posts/smartblog_sqli/",
                     "url": "https://blog.sorcery.ie/posts/smartblog_sqli/"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-46356",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "In the module \"CSV Feeds PRO\" (csvfeeds) before 2.6.1 from Bl Modules for PrestaShop, a guest can perform SQL injection. The method `SearchApiCsv::getProducts()` has sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/26/csvfeeds-89.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/26/csvfeeds-89.html"
                 }
             ]
         }
@@ -16971,6 +17109,68 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-27846",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability found in PrestaShop themevolty v.4.0.8 and before allow a remote attacker to gain privileges via the tvcmsblog, tvcmsvideotab, tvcmswishlist, tvcmsbrandlist, tvcmscategorychainslider, tvcmscategoryproduct, tvcmscategoryslider, tvcmspaymenticon, tvcmstestimonial components."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/25/tvcmsblog.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/25/tvcmsblog.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-33777",
             "STATE": "PUBLIC"
         },
@@ -17478,6 +17678,68 @@
                     "refsource": "MISC",
                     "name": "https://friends-of-presta.github.io/security-advisories/modules/2023/06/15/ailinear.html",
                     "url": "https://friends-of-presta.github.io/security-advisories/modules/2023/06/15/ailinear.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-45378",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "In the module \"PrestaBlog\" (prestablog) version 4.4.7 and before from HDclic for PrestaShop, a guest can perform SQL injection. The script ajax slider_positions.php has a sensitive SQL call that can be executed with a trivial http call and exploited to forge a SQL injection."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/26/prestablog.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/26/prestablog.html"
                 }
             ]
         }
